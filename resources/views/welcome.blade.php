@@ -96,6 +96,8 @@
 </nav>
 <!-- BAGIAN ISI HOME -->
 <div class="home-background">
+    <p> Hello iky </p>
+</div>
 <!-- BAGIAN BOOK LIST -->
 
 </div>
