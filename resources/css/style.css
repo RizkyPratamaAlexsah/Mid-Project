@@ -1,0 +1,41 @@
+body, html{
+    height: 100%;
+}
+
+.img-thumbnail{
+    width: 60px;
+    background-color: #3d6efd;
+    border-color: #3d6efd;
+}
+
+p{
+    font-style: cheque;
+}
+
+.nav-link-manage:hover{
+    color: violet;
+    background-color: violet;
+}
+
+.nav-link-add:hover{
+    color: darkgreen;
+    background-color: darkgreen;
+}
+
+.nav-link-delete:hover{
+    color:red;
+    background-color: red;
+}
+
+.home-background{
+    background-image: url("/assets/library.jpg");
+    background-color: black;
+    height: 88vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item{
+    height: 200px;
+}
