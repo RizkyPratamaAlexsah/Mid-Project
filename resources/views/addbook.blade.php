@@ -47,8 +47,11 @@
             background-position: center;
         }
 
-        .addForm{
-          width: 50%;
+        .mb-3{
+          color: white;
+          background-color: #8fce00;
+          width: 30%;
+          
         }
 
     </style>
@@ -102,27 +105,28 @@
 
 <!-- BAGIAN ISI HOME -->
 <div class="home-background">
-  <div class="addForm" >
-        <!-- BAGIAN FORM BOOK -->
-    <form action="{{route('addbook')}}" method="GET" class="addForm"> 
+
+<!-- BAGIAN FORM BOOK -->
+  <div class="addForm " >
+    <form action="{{route('addbook')}}" method="GET" class="col-form-label col-lg-15  text-center"> 
         @csrf
-        <div class="mb-3">
-          <label for="bookTitle" class="form-label">Book Title</label>
+        <div class="mb-3 offset-lg-4">
+          <label for="bookTitle" class="form-label col-form-label ">Book Title</label>
           <input type="text" class="form-control" id="bookTitle" name="bookTitle">
         </div>
-        <div class="mb-3">
-          <label for="yearPublished" class="form-label">Year Published</label>
+        <div class="mb-3 offset-lg-4">
+          <label for="yearPublished" class="form-label col-form-label">Year Published</label>
           <input type="number" class="form-control" id="yearPublished" name="yearPublished">
         </div>
-        <div class="mb-3">
-          <label for="author" class="form-label">Author Name</label>
+        <div class="mb-3 offset-lg-4">
+          <label for="author" class="form-label col-form-label">Author Name</label>
           <input type="text" class="form-control" id="author" name="author">
         </div>
-        <div class="mb-3">
-          <label for="language" class="form-label">Book Language</label>
+        <div class="mb-3 offset-lg-4">
+          <label for="language" class="form-label col-form-label">Book Language</label>
           <input type="text" class="form-control" id="language" name="language">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary ">Submit</button>
       </form>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
