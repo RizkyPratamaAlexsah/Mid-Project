@@ -19,5 +19,7 @@ class addController extends Controller
             'author' => $request->author,
             'language' => $request->language,
         ]);
+
+        return view('booklist');
     }
 }
