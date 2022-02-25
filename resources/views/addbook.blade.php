@@ -47,9 +47,10 @@
             background-position: center;
         }
 
-        .carousel-item{
-            height: 200px;
+        .addForm{
+          width: 50%;
         }
+
     </style>
 
 </head>
