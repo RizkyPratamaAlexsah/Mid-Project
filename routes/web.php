@@ -14,10 +14,12 @@ use App\Http\Controllers\addController;
 |
 */
 
+// LANDING PAGE ROUTE 
 Route::get('/', function () {
     return view('booklist');
 });
 
+// DATABASE ROUTE
 Route::get('/addbook', [
     addController::class, 'addbook'
 ])->name('addbook');
@@ -26,6 +28,7 @@ Route::post('/booklist', [
     addController::class, 'storeBook'
 ])->name('storeBook');
 
+// WEBPAGES ROUTE
 Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
