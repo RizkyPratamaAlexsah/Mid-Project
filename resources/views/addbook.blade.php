@@ -14,13 +14,13 @@
         }
 
         .img-thumbnail{
-            width: 60px;
+            width: 90px;
             background-color: #3d6efd;
             border-color: #3d6efd;
         }
 
-        p{
-            font-style: cheque;
+        .M-Lib{
+          font-size: 18px;
         }
 
         .nav-link-manage:hover{
@@ -64,7 +64,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="{{route('booklist')}}">
         <img src="/assets/Musang-Library.png" class="img-thumbnail d-inline-block align-text-center" alt="logolib" >
-        <p class="d-inline-block align-text-center">M.Lib</p>
+        <p class="d-inline-block align-text-center M-Lib">M.Lib</p>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
