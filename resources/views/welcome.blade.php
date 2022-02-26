@@ -15,13 +15,9 @@
         }
 
         .img-thumbnail{
-            width: 60px;
+            width: 200px;
             background-color: #3d6efd;
             border-color: #3d6efd;
-        }
-
-        p{
-            font-style: cheque;
         }
 
         .nav-link-manage:hover{
