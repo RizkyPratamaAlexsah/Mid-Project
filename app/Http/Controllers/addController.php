@@ -16,7 +16,7 @@ class addController extends Controller
             'Title' => $request->bookTitle,
             'Year_Published' => $request->yearPublished,
             'Author' => $request->author,
-            'Language' => $request->language,
+            'Pages' => $request->pages,
         ]);
 
         return view('booklist');

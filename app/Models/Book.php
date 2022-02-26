@@ -13,6 +13,6 @@ class Book extends Model
         'Title',
         'Year_Published',
         'Author',
-        'Language',
+        'Pages',
     ];
 }
