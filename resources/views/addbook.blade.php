@@ -116,7 +116,7 @@
         </div>
         <div class="mb-3 offset-lg-4">
           <label for="yearPublished" class="form-label col-form-label">Year Published</label>
-          <input type="number" class="form-control" id="yearPublished" name="yearPublished">
+          <input type="date" class="form-control" id="yearPublished" name="yearPublished">
         </div>
         <div class="mb-3 offset-lg-4">
           <label for="author" class="form-label col-form-label">Author Name</label>
