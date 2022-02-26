@@ -108,7 +108,7 @@
 
 <!-- BAGIAN FORM BOOK -->
   <div class="addForm " >
-    <form action="{{route('booklist')}}" method="POST" class="col-form-label col-lg-15  text-center"> 
+    <form action="{{route('storeBook')}}" method="POST" class="col-form-label col-lg-15  text-center"> 
         @csrf
         <div class="mb-3 offset-lg-4">
           <label for="bookTitle" class="form-label col-form-label ">Book Title</label>
