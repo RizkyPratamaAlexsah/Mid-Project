@@ -18,11 +18,11 @@ Route::get('/', function () {
     return view('booklist');
 });
 
-Route::get('/addbook', [
+Route::get('/create/book', [
     addController::class, 'addbook'
 ])->name('addbook');
 
-Route::post('/booklist', [
+Route::post('/store/book', [
     addController::class, 'storeBook'
 ])->name('storeBook');
 
