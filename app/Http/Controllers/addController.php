@@ -13,10 +13,10 @@ class addController extends Controller
 
     public function storeBook(Request $request){
         Book::create([
-            'bookTitle' => $request->bookTitle,
-            'yearPublished' => $request->yearPublished,
-            'author' => $request->author,
-            'language' => $request->language,
+            'Title' => $request->bookTitle,
+            'Year Published' => $request->yearPublished,
+            'Author' => $request->author,
+            'Language' => $request->language,
         ]);
 
         return view('booklist');
