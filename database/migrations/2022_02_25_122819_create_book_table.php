@@ -19,8 +19,7 @@ return new class extends Migration
             $table->date('Year Published');
             $table->string('Author');
             $table->string('Language');
-            $table->timestamps('updated_at');
-            $table->timestamps('created_at');
+            $table->timestamps();
         });
     }
 
