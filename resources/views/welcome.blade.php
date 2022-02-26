@@ -81,10 +81,10 @@
           <a class="nav-link nav-link-add active" href="{{route('addbook')}}">ADD BOOK</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-manage link-light active" href="">MANAGE BOOK</a>
+          <a class="nav-link nav-link-manage link-light active" href="{{route('managebook')}}">MANAGE BOOK</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-delete link-light active" href="">DELETE BOOK</a>
+          <a class="nav-link nav-link-delete link-light active" href="{{route('deletebook')}}">DELETE BOOK</a>
         </li>
       </ul>
       <form class="d-flex">

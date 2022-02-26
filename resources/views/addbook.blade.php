@@ -86,13 +86,13 @@
           </ul> -->
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-add active" href="">ADD BOOK</a>
+          <a class="nav-link nav-link-add active" href="{{route('addbook')}}">ADD BOOK</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-manage link-light active" href="">MANAGE BOOK</a>
+          <a class="nav-link nav-link-manage link-light active" href="{{route('managebook')}}">MANAGE BOOK</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-delete link-light active" href="">DELETE BOOK</a>
+          <a class="nav-link nav-link-delete link-light active" href="{{route('deletebook')}}">DELETE BOOK</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -123,10 +123,10 @@
           <input type="text" class="form-control" id="author" name="author">
         </div>
         <div class="mb-3 offset-lg-4">
-          <label for="language" class="form-label col-form-label">Book Language</label>
-          <input type="text" class="form-control" id="language" name="language">
+          <label for="pages" class="form-label col-form-label">Book Pages</label>
+          <input type="number" class="form-control" id="pages" name="pages">
         </div>
-        <button type="submit" class="btn btn-primary ">Submit</button>
+        <button type="submit" class="btn btn-success ">Submit</button>
       </form>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <style>
+    <style>
         body, html{
             height: 100%;
         }
@@ -47,13 +47,22 @@
             background-position: center;
         }
 
+        .mb-3{
+          color: black;
+          background-color: #f5c10b;
+          width: 30%;
+          
+        }
+
     </style>
+
 </head>
 <body>
+
 <!-- BAGIAN NAVBAR: -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" href="{{route('booklist')}}">
         <img src="/assets/Musang-Library.png" class="img-thumbnail d-inline-block align-text-center" alt="logolib" >
         <p class="d-inline-block align-text-center M-Lib">M.Lib</p>
     </a>
@@ -93,8 +102,36 @@
     </div>
   </div>
 </nav>
+
 <!-- BAGIAN ISI HOME -->
 <div class="home-background">
+
+<!-- BAGIAN FORM BOOK -->
+  <div class="addForm " >
+    <form action="" method="POST" class="col-form-label col-lg-15  text-center"> 
+        @csrf
+        <div class="mb-3 offset-lg-4">
+          <label for="bookTitle" class="form-label col-form-label ">Book Title</label>
+          <input type="text" class="form-control" id="bookTitle" name="bookTitle">
+        </div>
+        <div class="mb-3 offset-lg-4">
+          <label for="yearPublished" class="form-label col-form-label">Year Published</label>
+          <input type="date" class="form-control" id="yearPublished" name="yearPublished">
+        </div>
+        <div class="mb-3 offset-lg-4">
+          <label for="author" class="form-label col-form-label">Author Name</label>
+          <input type="text" class="form-control" id="author" name="author">
+        </div>
+        <div class="mb-3 offset-lg-4">
+          <label for="pages" class="form-label col-form-label">Book Pages</label>
+          <input type="number" class="form-control" id="pages" name="pages">
+        </div>
+        <button type="submit" class="btn btn-warning ">Submit</button>
+      </form>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </div>
 
 </div>
 </body>

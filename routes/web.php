@@ -40,3 +40,11 @@ Route::get('/addbook', function () {
 Route::get('/booklist', function () {
     return view('booklist');
 })->name('booklist');
+
+Route::get('/deletebook', function () {
+    return view('deletebook');
+})->name('deletebook');
+
+Route::get('/managebook', function () {
+    return view('managebook');
+})->name('managebook');
