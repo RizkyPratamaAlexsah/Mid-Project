@@ -107,10 +107,10 @@
     <tbody>
         @foreach ($books as $book)
         <tr>
-          <th scope="row">{{$book->bookTitle}}</th>
-          <td>{{$book->yearPublished}}</td>
-          <td>{{$book->author}}</td>
-          <td>{{$book->pages}}</td>
+          <th scope="row">{{$book->Title}}</th>
+          <td>{{$book->Year_Published}}</td>
+          <td>{{$book->Author}}</td>
+          <td>{{$book->Pages}}</td>
         </tr>
         @endforeach
     </tbody>
