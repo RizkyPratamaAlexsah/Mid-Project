@@ -95,7 +95,28 @@
 </nav>
 <!-- BAGIAN ISI HOME -->
 <div class="home-background">
-
+  <table class="table table-light">
+    <thead>
+      <tr class="table-info">
+        <th scope="col">Title</th>
+        <th scope="col">Year Published</th>
+        <th scope="col">Author</th>
+        <th scope="col">Pages</th>
+      </tr>
+    </thead>
+    <tbody>
+        @foreach ($books as $book)
+        <tr>
+          <th scope="row">{{$book->bookTitle}}</th>
+          <td>{{$book->yearPublished}}</td>
+          <td>{{$book->author}}</td>
+          <td>{{$book->pages}}</td>
+        </tr>
+        @endforeach
+    </tbody>
+  </table>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>

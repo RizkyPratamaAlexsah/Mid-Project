@@ -28,6 +28,10 @@ Route::post('/booklist', [
     addController::class, 'storeBook'
 ])->name('storeBook');
 
+Route::get('/managebook', [
+    addController::class, 'showBook'
+])->name('managebook');
+
 // WEBPAGES ROUTE
 Route::get('/welcome', function () {
     return view('welcome');
@@ -48,3 +52,4 @@ Route::get('/deletebook', function () {
 Route::get('/managebook', function () {
     return view('managebook');
 })->name('managebook');
+

@@ -21,4 +21,9 @@ class addController extends Controller
 
         return view('booklist');
     }
+
+    public function showBook(){
+        $books = Book::all();
+        return view('booklist', compact('books'));
+    }
 }
